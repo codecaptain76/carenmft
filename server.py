@@ -9,8 +9,9 @@ app.jinja_env.undefined = StrictUndefined
 
 @app.route("/")
 def index():
-	pass
-
+	"""render hompage """
+	return render_template("index.html")
+	
 @app.route("/about")
 def about():
 	pass
@@ -22,7 +23,7 @@ def fees():
 @app.route("/contact")
 def contact():
 	pass
-	
+
 
 
 
