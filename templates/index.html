@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+{% block content %}
+{% endblock %}	
 
 
 
@@ -32,15 +34,3 @@
 
 
 
-
-
-{% for flash in get_flashed_messages() %}
-		{{ flash }}
-		{% endfor %}
-		</div>
-	</div>
-
-		<div id="main">		 
-		{% block content %}
-
-    	{% endblock %}	
