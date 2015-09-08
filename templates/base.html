@@ -1,12 +1,49 @@
 <!DOCTYPE HTML>
 <html>
+
+
+
 	<head>
-		<title>Caren MFT</title>
+		<link href='http://fonts.googleapis.com/css?family=Architects+Daughter|Permanent+Marker' rel='stylesheet' type='text/css'>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+	<style>
+
+	#footer{
+		height: 100px
+		text-align: center;
+
+	}
+
+	</style>
+		
 	</head>
 
 	<body>
-<div>
-{% block content %} put content here {% endblock %}
+<div id="container">
+	
+		<div id="header">
+			<title>Caren MFT</title>
+			<h1>Caren Ohlson, MFT</h1>
+			<h3>Therapist for Community Organizers & Leaders</h3>
+		</div>
+
+		<div id="menu">
+			<h3>
+			<a href="/"><p>Home</p></a>
+			<a href="/about"><p>About Me</p></a>
+			<a href="/fees"><p>Fees</p></a>
+			<a href="/contact"><p>Contact</p></a>
+			</h3>
+		</div>
+		<div id="main">
+			{% block content %} put content here {% endblock %}
+		</div>
+
+		<div id="footer">
+			Copyright &copy; 2015 Keirra Hall 
+
+		</div>
 </div>
 	</body>
 
