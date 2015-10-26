@@ -6,6 +6,8 @@
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Architects+Daughter|Permanent+Marker' rel='stylesheet' type='text/css'>
 
+		<title>Caren Ohlson, MFT</title>
+
 		<script src="https://code.jquery.com/jquery.js"></script>
 	<style>
 
@@ -21,28 +23,33 @@
 
 	<body>
 <div id="container">
-	
+
 		<div id="header">
 			<title>Caren MFT</title>
+			<p class= "header-Text"
 			<h1>Caren Ohlson, MFT</h1>
 			<h3>Therapist for Community Organizers & Leaders</h3>
-		</div>
+		
 
-		<div id="menu">
+			<nav class= "navbarButton">
 			<h3>
-			<a href="/"><p>Home</p></a>
-			<a href="/about"><p>About Me</p></a>
-			<a href="/fees"><p>Fees</p></a>
-			<a href="/contact"><p>Contact</p></a>
+			<a href="/">Home |</a>
+			<a href="/about">About Me |</a>
+			<a href="/fees">Fees |</a>
+			<a href="/contact">Contact</a>
 			</h3>
+			</nav>
 		</div>
 		<div id="main">
-			{% block content %} put content here {% endblock %}
+			{% block content %} 
+				
+			{% endblock %}
 		</div>
 
 		<div id="footer">
+			<p class ="footer-Text">
 			Copyright &copy; 2015 Keirra Hall 
-
+			</p>	
 		</div>
 </div>
 	</body>
