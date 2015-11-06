@@ -12,8 +12,9 @@ def index():
 	"""render homepage """
 	return render_template("index.html")
 
-@app.route('/about')
+@app.route('/about', methods=['GET'])
 def about():
+	
 	return render_template("about.html")
 
 @app.route('/fees')
