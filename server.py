@@ -14,12 +14,15 @@ def index():
 
 @app.route('/about', methods=['GET'])
 def about():
-	
 	return render_template("about.html")
 
 @app.route('/fees')
 def fees():
 	return render_template("fees.html")
+
+@app.route('/resources')
+def resources():
+	return render_template("resources.html")
 
 @app.route('/contact')
 def contact():
